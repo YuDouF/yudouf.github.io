@@ -236,9 +236,71 @@
 </li>
 <li><p>显式类型转换：显式类型转换，即强制类型转换。显式转换需要强制转换运算符，而且强制转换会造成数据丢失。</p>
 </li>
-<li><p>​</p>
+<li><p>C#类型转换方法</p>
+<p><img src="/images/游戏开发/C-Shape/类型转换1.JPG" alt="类型转换1"></p>
+<p><img src="/images/游戏开发/C-Shape/类型转换2.JPG" alt="类型转换2"></p>
 </li>
 </ol>
+<h2 id="7-C-循环"><a href="#7-C-循环" class="headerlink" title="7. C#循环"></a>7. C#循环</h2><p>​    C#中的for-each循环，使用for-each循环可以迭代数组或一个集合对象。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">foreach(type ele in aggregate)&#123;</div><div class="line">		</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​    该循环的运行过程如下：每一次循环时，从集合中取出一个新的元素值。放到只读变量中去，如果括号中的整个表达式返回值为true，for-each块中的语句就能够执行。一旦集合中的元素都已经被访问到，整个表达式的值为false，控制流程就转入到for-each块后面的执行语句。</p>
+<h2 id="8-C-参数传递"><a href="#8-C-参数传递" class="headerlink" title="8. C#参数传递"></a>8. C#参数传递</h2><p><img src="/images/游戏开发/C-Shape/参数传递.JPG" alt="参数传递"></p>
+<ol>
+<li><p>按引用传递参数，ref</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public void swap(ref int x, ref int y)&#123;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>按输出传递参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public void getValue(out int x)&#123;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​    C#可空类型（Nullable），可空类型可以表示其基础值类型正常范围内的值，再加上一个 null 值。</p>
+<p>​    例如，Nullable&lt; Int32 &gt;，读作”可空的 Int32”，可以被赋值为 -2,147,483,648 到 2,147,483,647 之间的任意值，也可以被赋值为 null 值。类似的，Nullable&lt; bool &gt; 变量可以被赋值为 true 或 false 或 null。</p>
+<p>声明一个nullable类型的语法：<figure class="highlight plain"><figcaption><span>data_type> ? <variable_name> </variable_name></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```c#</div><div class="line">int? num1 = null;</div><div class="line">int? num2 = 45;</div><div class="line">double? num3 = new double?();</div><div class="line">double? num4 = 3.14157;</div><div class="line">bool? boolval = new bool?(); </div><div class="line">// 显示值</div><div class="line">Console.WriteLine(&quot;显示可空类型的值： &#123;0&#125;, &#123;1&#125;, &#123;2&#125;, &#123;3&#125;&quot;, </div><div class="line">                            num1, num2, num3, num4);</div><div class="line">Console.WriteLine(&quot;一个可空的布尔值： &#123;0&#125;&quot;, boolval);</div><div class="line">Console.ReadLine();</div></pre></td></tr></table></figure></p>
+<p>​    Null合并运算符（??），Null 合并运算符用于定义可空类型和引用类型的默认值。Null 合并运算符为类型转换定义了一个预设值，以防可空类型的值为 Null。Null 合并运算符把操作数类型隐式转换为另一个可空（或不可空）的值类型的操作数的类型。</p>
+<p><strong>如果第一个操作数的值为 null，则运算符返回第二个操作数的值，否则返回第一个操作数的值。</strong></p>
+<h2 id="9-C数组"><a href="#9-C数组" class="headerlink" title="9. C数组"></a>9. C数组</h2><p>存储相同类型元素的固定大小的顺序集合。</p>
+<ol>
+<li>声明数组 <code>double[] arrayName;</code></li>
+</ol>
+</li>
+</ol>
+<ol>
+<li>初始化数组</li>
+<li><p>数组赋值</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">double[] balance = &#123;234.2, 44.2&#125;;</div><div class="line">int[] marks = new int[5]  &#123; 99,  98, 92, 97, 95&#125;; //创建并初始化数组</div><div class="line">int[] marks = new int[]  &#123; 99,  98, 92, 97, 95&#125;; //与上一种方法等效</div><div class="line">int[] score = marks; //目标和源指向相同的内存位置</div></pre></td></tr></table></figure>
+<h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a><strong>二维数组</strong></h4></li>
+<li><p>二维数组声明</p>
+<p><code>string[,] names;</code> </p>
+</li>
+<li><p>二维数组初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">int [,] a = new int [3,4] &#123;</div><div class="line"> &#123;0, 1, 2, 3&#125; ,   /*  初始化索引号为 0 的行 */</div><div class="line"> &#123;4, 5, 6, 7&#125; ,   /*  初始化索引号为 1 的行 */</div><div class="line"> &#123;8, 9, 10, 11&#125;   /*  初始化索引号为 2 的行 */</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>二维数组访问</p>
+<p><code>int val = a[2, 3];</code></p>
+<h2 id="10-C结构体的贴点"><a href="#10-C结构体的贴点" class="headerlink" title="10. C结构体的贴点"></a>10. C结构体的贴点</h2></li>
+</ol>
+<ul>
+<li>结构可带有方法、字段、索引、属性、运算符方法和事件。</li>
+<li>结构可定义构造函数，但不能定义析构函数。但是，您不能为结构定义默认的构造函数。默认的构造函数是自动定义的，且不能被改变。</li>
+<li>与类不同，结构不能继承其他的结构或类。</li>
+<li>结构不能作为其他结构或类的基础结构。</li>
+<li>结构可实现一个或多个接口。</li>
+<li>结构成员不能指定为 abstract、virtual 或 protected。</li>
+<li>当您使用 <strong>New</strong> 操作符创建一个结构对象时，会调用适当的构造函数来创建结构。与类不同，结构可以不使用 New 操作符即可被实例化。</li>
+<li><p>如果不使用 New 操作符，只有在所有的字段都被初始化之后，字段才被赋值，对象才被使用。</p>
+<p>类 vs 结构</p>
+</li>
+<li><p>类是引用类型，结构是值类型。</p>
+</li>
+<li>结构不支持继承。</li>
+<li><p>结构不能声明默认的构造函数。</p>
+<h2 id="11-C多重继承"><a href="#11-C多重继承" class="headerlink" title="11. C多重继承"></a>11. C多重继承</h2><p><strong>C# 不支持多重继承</strong>。但是，可以使用接口来实现多重继承。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">using System;</div><div class="line">namespace InheritanceApplication</div><div class="line">&#123;</div><div class="line">   class Shape </div><div class="line">   &#123;</div><div class="line">      public void setWidth(int w)</div><div class="line">      &#123;</div><div class="line">         width = w;</div><div class="line">      &#125;</div><div class="line">      public void setHeight(int h)</div><div class="line">      &#123;</div><div class="line">         height = h;</div><div class="line">      &#125;</div><div class="line">      protected int width;</div><div class="line">      protected int height;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   // 基类 PaintCost</div><div class="line">   public interface PaintCost </div><div class="line">   &#123;</div><div class="line">      int getCost(int area);</div><div class="line"></div><div class="line">   &#125;</div><div class="line">   // 派生类</div><div class="line">   class Rectangle : Shape, PaintCost</div><div class="line">   &#123;</div><div class="line">      public int getArea()</div><div class="line">      &#123;</div><div class="line">         return (width * height);</div><div class="line">      &#125;</div><div class="line">      public int getCost(int area)</div><div class="line">      &#123;</div><div class="line">         return area * 70;</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">   class RectangleTester</div><div class="line">   &#123;</div><div class="line">      static void Main(string[] args)</div><div class="line">      &#123;</div><div class="line">         Rectangle Rect = new Rectangle();</div><div class="line">         int area;</div><div class="line">         Rect.setWidth(5);</div><div class="line">         Rect.setHeight(7);</div><div class="line">         area = Rect.getArea();</div><div class="line">         // 打印对象的面积</div><div class="line">         Console.WriteLine(&quot;总面积： &#123;0&#125;&quot;,  Rect.getArea());</div><div class="line">         Console.WriteLine(&quot;油漆总成本： $&#123;0&#125;&quot; , Rect.getCost(area));</div><div class="line">         Console.ReadKey();</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ul>
+<h2 id="12-C-多态性"><a href="#12-C-多态性" class="headerlink" title="12. C#多态性"></a>12. C#多态性</h2><p>​    <strong>多态性</strong>意味着有多重形式。在面向对象编程范式中，多态性往往表现为”一个接口，多个功能”。</p>
+<p>​    多态性可以是静态的或动态的。在<strong>静态多态性</strong>（函数重载、运算符重载）中，函数的响应是在编译时发生的。在<strong>动态多态性</strong>（抽象类、虚方法）中，函数的响应是在运行时发生的。</p>
+<h2 id="13-C-运算符重载"><a href="#13-C-运算符重载" class="headerlink" title="13. C#运算符重载"></a>13. C#运算符重载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">public static Box operator+ (Box b, Box c) //static</div><div class="line">&#123;</div><div class="line">   Box box = new Box();</div><div class="line">   box.length = b.length + c.length;</div><div class="line">   box.breadth = b.breadth + c.breadth;</div><div class="line">   box.height = b.height + c.height;</div><div class="line">   return box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
 
       
 
