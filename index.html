@@ -259,7 +259,7 @@
 <h2 id="9-C数组"><a href="#9-C数组" class="headerlink" title="9. C数组"></a>9. C数组</h2><p>存储相同类型元素的固定大小的顺序集合。</p>
 <ol>
 <li>声明数组 <code>double[] arrayName;</code></li>
-<li>数组初始化</li>
+<li>数组初始化 <code>double[] balance = new balance[10]</code></li>
 <li>数组赋值</li>
 </ol>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">double[] balance = &#123;234.2, 44.2&#125;;</div><div class="line">int[] marks = new int[5]  &#123; 99,  98, 92, 97, 95&#125;; //创建并初始化数组</div><div class="line">int[] marks = new int[]  &#123; 99,  98, 92, 97, 95&#125;; //与上一种方法等效</div><div class="line">int[] score = marks; //目标和源指向相同的内存位置</div></pre></td></tr></table></figure>
@@ -274,7 +274,18 @@
 <p><code>int val = a[2, 3];</code></p>
 </li>
 </ol>
-<h2 id="10-C结构体的贴点"><a href="#10-C结构体的贴点" class="headerlink" title="10. C结构体的贴点"></a>10. C结构体的贴点</h2><ul>
+<h4 id="C-交错数组"><a href="#C-交错数组" class="headerlink" title="C#交错数组"></a>C#交错数组</h4><blockquote>
+<p>交错数组是数组的数组</p>
+</blockquote>
+<h4 id="C-参数数组"><a href="#C-参数数组" class="headerlink" title="C#参数数组"></a>C#参数数组</h4><blockquote>
+<p>有时，当声明一个方法时，您不能确定要传递给函数作为参数的参数数目。C# 参数数组解决了这个问题，参数数组通常用于传递未知数量的参数给函数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">using System;</div><div class="line"></div><div class="line">namespace ArrayApplication</div><div class="line">&#123;</div><div class="line">   class ParamArray</div><div class="line">   &#123;</div><div class="line">      public int AddElements(params int[] arr)</div><div class="line">      &#123;</div><div class="line">         int sum = 0;</div><div class="line">         foreach (int i in arr)</div><div class="line">         &#123;</div><div class="line">            sum += i;</div><div class="line">         &#125;</div><div class="line">         return sum;</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">      </div><div class="line">   class TestClass</div><div class="line">   &#123;</div><div class="line">      static void Main(string[] args)</div><div class="line">      &#123;</div><div class="line">         ParamArray app = new ParamArray();</div><div class="line">         int sum = app.AddElements(512, 720, 250, 567, 889);</div><div class="line">         Console.WriteLine(&quot;总和是： &#123;0&#125;&quot;, sum);</div><div class="line">         Console.ReadKey();</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">int[][] scores = new int[5][];</div><div class="line">for(int i = 0; i &lt; scores.Length; i++)&#123;</div><div class="line">    scores[i] = new int[4];</div><div class="line">&#125;</div><div class="line">//-----------</div><div class="line">int[][] scores = new int[2][]&#123;new int[]&#123;92, 93, 94&#125;, new int[]&#123;85, 66, 87, 88&#125;&#125;;	//其中，scores 是一个由两个整型数组组成的数组 -- scores[0] 是一个带有 3 个整数的数组，scores[1] 是一个带有 4 个整数的数组。</div></pre></td></tr></table></figure>
+<h4 id="C-Array类"><a href="#C-Array类" class="headerlink" title="C#Array类"></a>C#Array类</h4><p>​</p>
+<p>​</p>
+<h2 id="10-C结构体的特点"><a href="#10-C结构体的特点" class="headerlink" title="10. C结构体的特点"></a>10. C结构体的特点</h2><ul>
 <li>结构可带有方法、字段、索引、属性、运算符方法和事件。</li>
 <li>结构可定义构造函数，但不能定义析构函数。但是，您不能为结构定义默认的构造函数。默认的构造函数是自动定义的，且不能被改变。</li>
 <li>与类不同，结构不能继承其他的结构或类。</li>
@@ -297,9 +308,18 @@
 </ol>
 <h2 id="12-C-多态性"><a href="#12-C-多态性" class="headerlink" title="12. C#多态性"></a>12. C#多态性</h2><p>​    <strong>多态性</strong>意味着有多重形式。在面向对象编程范式中，多态性往往表现为”一个接口，多个功能”。</p>
 <p>​    多态性可以是静态的或动态的。在<strong>静态多态性</strong>（函数重载、运算符重载）中，函数的响应是在编译时发生的。在<strong>动态多态性</strong>（抽象类、虚方法）中，函数的响应是在运行时发生的。</p>
-<h2 id="13-C-运算符重载"><a href="#13-C-运算符重载" class="headerlink" title="13. C#运算符重载"></a>13. C#运算符重载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">public static Box operator+ (Box b, Box c) //static</div><div class="line">&#123;</div><div class="line">   Box box = new Box();</div><div class="line">   box.length = b.length + c.length;</div><div class="line">   box.breadth = b.breadth + c.breadth;</div><div class="line">   box.height = b.height + c.height;</div><div class="line">   return box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
-<p>​</p>
-
+<h2 id="13-C-运算符重载"><a href="#13-C-运算符重载" class="headerlink" title="13. C#运算符重载"></a>13. C#运算符重载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">public static Box operator+ (Box b, Box c) //必须为static，public</div><div class="line">&#123;</div><div class="line">   Box box = new Box();</div><div class="line">   box.length = b.length + c.length;</div><div class="line">   box.breadth = b.breadth + c.breadth;</div><div class="line">   box.height = b.height + c.height;</div><div class="line">   return box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="14-C-的virtual和abstract"><a href="#14-C-的virtual和abstract" class="headerlink" title="14. C#的virtual和abstract"></a>14. C#的virtual和abstract</h2><p>​    virtual和abstract都是用来修饰父类的，通过覆盖父类的定义，让子类重新定义。</p>
+<ol>
+<li>virtual修饰的方法必须有实现（哪怕是仅仅添加一对大括号),而abstract修饰的方法一定不能实现。</li>
+<li>virtual可以被子类重写，而abstract必须被子类重写。</li>
+<li>如果类成员被abstract修饰，则该类前必须添加abstract，因为只有抽象类才可以有抽象方法。</li>
+<li>无法创建abstract类的实例，只能被继承无法实例化。</li>
+</ol>
+<h2 id="15-C-命名空间"><a href="#15-C-命名空间" class="headerlink" title="15. C#命名空间"></a>15. C#命名空间</h2><blockquote>
+<p>命名空间的设计目的是提供一种让一组名称与其他名称分隔开的方式。在一个命名空间中声明的类的名称与另一个命名空间中声明的相同的类的名称不冲突。</p>
+</blockquote>
+<h2 id="16-C-特性"><a href="#16-C-特性" class="headerlink" title="16. C#特性"></a>16. C#特性</h2>
       
 
       
