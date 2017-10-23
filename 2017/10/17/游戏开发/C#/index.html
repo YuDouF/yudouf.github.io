@@ -6,14 +6,24 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2017 | Hexo</title>
+  <title>Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+  <meta name="description" content="[TOC] C1. 组成部分 命名空间声明  一个class  Class方法  Class属性  一个Main方法  语句和表达式  注释 HelloWorld示例：   12345678910111213using System;	// 在程序中包含系统命名空间namespace HelloWorldApplication&amp;#123;   class HelloWorld   &amp;#123;">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2017/index.html">
+<meta property="og:url" content="http://yoursite.com/2017/10/17/游戏开发/C#/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="[TOC] C1. 组成部分 命名空间声明  一个class  Class方法  Class属性  一个Main方法  语句和表达式  注释 HelloWorld示例：   12345678910111213using System;	// 在程序中包含系统命名空间namespace HelloWorldApplication&amp;#123;   class HelloWorld   &amp;#123;">
+<meta property="og:image" content="http://yoursite.com/images/游戏开发/C-Shape/上下文关键字.jpg">
+<meta property="og:image" content="http://yoursite.com/images/游戏开发/C-Shape/值类型.JPG">
+<meta property="og:image" content="http://yoursite.com/images/游戏开发/C-Shape/类型转换1.JPG">
+<meta property="og:image" content="http://yoursite.com/images/游戏开发/C-Shape/类型转换2.JPG">
+<meta property="og:image" content="http://yoursite.com/images/游戏开发/C-Shape/参数传递.JPG">
+<meta property="og:updated_time" content="2017-10-17T14:36:11.784Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="[TOC] C1. 组成部分 命名空间声明  一个class  Class方法  Class属性  一个Main方法  语句和表达式  注释 HelloWorld示例：   12345678910111213using System;	// 在程序中包含系统命名空间namespace HelloWorldApplication&amp;#123;   class HelloWorld   &amp;#123;">
+<meta name="twitter:image" content="http://yoursite.com/images/游戏开发/C-Shape/上下文关键字.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -149,259 +159,407 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-游戏开发/C#" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>[TOC]</p>
+<h1 id="C"><a href="#C" class="headerlink" title="C"></a>C</h1><h2 id="1-组成部分"><a href="#1-组成部分" class="headerlink" title="1. 组成部分"></a>1. 组成部分</h2><ol>
+<li><p>命名空间声明</p>
+</li>
+<li><p>一个class</p>
+</li>
+<li><p>Class方法</p>
+</li>
+<li><p>Class属性</p>
+</li>
+<li><p>一个Main方法</p>
+</li>
+<li><p>语句和表达式</p>
+</li>
+<li><p>注释</p>
+<p>HelloWorld示例：</p>
+</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line">using System;	// 在程序中包含系统命名空间</div><div class="line">namespace HelloWorldApplication</div><div class="line">&#123;</div><div class="line">   class HelloWorld</div><div class="line">   &#123;</div><div class="line">      static void Main(string[] args)</div><div class="line">      &#123;</div><div class="line">         /* 我的第一个 C# 程序*/</div><div class="line">         Console.WriteLine(&quot;Hello World&quot;);</div><div class="line">         Console.ReadKey();</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="2-注意事项"><a href="#2-注意事项" class="headerlink" title="2. 注意事项"></a>2. 注意事项</h2><ul>
+<li>C#是大小写敏感的</li>
+<li>所有语句最后以；结尾</li>
+<li>程序的执行从Main方法开始（类似JAVA）</li>
+<li>与JAVA不同的是，文件名可以不同于类的名称</li>
+</ul>
+<h2 id="3-主要功能"><a href="#3-主要功能" class="headerlink" title="3. 主要功能"></a>3. 主要功能</h2><ol>
+<li>布尔条件</li>
+<li><strong>自动垃圾回收</strong></li>
+<li>标准库</li>
+<li>组件版本</li>
+<li>属性和事件</li>
+<li><strong>委托和事件管理</strong></li>
+<li><strong>易于使用泛型</strong></li>
+<li>索引器</li>
+<li>条件编译</li>
+<li>简单多线程</li>
+<li>LINQ和Lambda表达式</li>
+<li>集成Windows</li>
+</ol>
+<h2 id="4-基本语法"><a href="#4-基本语法" class="headerlink" title="4. 基本语法"></a>4. 基本语法</h2><p>标识符必须以字母、下划线或者<code>@</code> 开头，后面跟一系列字母、数字、下划线、@。在 C# 中，有些标识符在代码的上下文中有特殊的意义，如 get 和 set，这些被称为上下文关键字（contextual keywords）。<img src="/images/游戏开发/C-Shape/上下文关键字.jpg" alt="上下文关键字"></p>
+<h2 id="5-数据类型"><a href="#5-数据类型" class="headerlink" title="5. 数据类型"></a>5. 数据类型</h2><ol>
+<li><p>值类型</p>
+<p><img src="/images/游戏开发/C-Shape/值类型.JPG" alt="值类型"></p>
+</li>
+<li><p>引用类型</p>
+<p>引用类型不包含存储在变量中的实际数据，但它包含对变量的引用。它指的是一个内存位置。<strong>内置的引用类型有：object、dynamic、string</strong>。</p>
+<ol>
+<li><p>对象（Object）类型</p>
+<p><strong>对象（Object）类型</strong> 是 C# 通用类型系统（Common Type System - CTS）中所有数据类型的终极基类。Object 是 System.Object 类的别名。所以对象（Object）类型可以被分配任何其他类型（值类型、引用类型、预定义类型或用户自定义类型）的值。但是，在分配值之前，需要先进行类型转换。</p>
+<p>当一个值类型转换为对象类型时，则被称为 <strong>装箱</strong>；另一方面，当一个对象类型转换为值类型时，则被称为 <strong>拆箱</strong>。</p>
+<p><strong>变量检查在编译时发生。</strong></p>
+<p><em>装箱：值类型转换为对象类型, 实例：</em></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">int val = 8;</div><div class="line">object obj = val;//整型数据转换为了对象类型（装箱）</div></pre></td></tr></table></figure>
+<p>*拆箱：之前由值转换而来的对象类型再转回值类型，实例：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">int val = 8;</div><div class="line">object obj = val;//先装箱</div><div class="line">int nval = （int）obj;//再拆箱</div></pre></td></tr></table></figure>
+<p><u><strong>只有装过箱的数据才能拆箱。</strong></u></p>
+</li>
+<li><p>动态（Dynamic）类型</p>
+<p>可以存储任何类型的值在动态数据类型变量中。</p>
+<p><strong>变量检查在运行时发生</strong>。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">dynamic &lt;variable_name&gt; = value;</div></pre></td></tr></table></figure>
+</li>
+<li><p>字符串（String）类型</p>
+<p>从（Object）类型派生，允许给变量分配任何字符串值。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">String str = &quot;C://Windows&quot;;</div><div class="line">String str1 = @&quot;C:/Windows&quot;;	// 二者等价</div></pre></td></tr></table></figure>
+<p>@ 字符串中可以任意换行，换行符及缩进空格都计算在字符串长度之内。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">string str = @&quot;&lt;script type=&quot;&quot;text/javascript&quot;&quot;&gt;</div><div class="line">    &lt;!--</div><div class="line">    --&gt;</div><div class="line">&lt;/script&gt;&quot;;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+</li>
+<li><p>指针类型</p>
+<p>存储内存地址，与C或C++中的指针有相同的功能。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">char *cptr;</div><div class="line">int *iptr;</div></pre></td></tr></table></figure>
+</li>
+</ol>
+<h2 id="6-C-类型转换"><a href="#6-C-类型转换" class="headerlink" title="6. C#类型转换"></a>6. C#类型转换</h2><ol>
+<li><p>隐式类型转换：这些转换是 C# 默认的以安全方式进行的转换, 不会导致数据丢失。例如，从小的整数类型转换为大的整数类型，从派生类转换为基类。</p>
+</li>
+<li><p>显式类型转换：显式类型转换，即强制类型转换。显式转换需要强制转换运算符，而且强制转换会造成数据丢失。</p>
+</li>
+<li><p>C#类型转换方法</p>
+<p><img src="/images/游戏开发/C-Shape/类型转换1.JPG" alt="类型转换1"></p>
+<p><img src="/images/游戏开发/C-Shape/类型转换2.JPG" alt="类型转换2"></p>
+</li>
+</ol>
+<h2 id="7-C-循环"><a href="#7-C-循环" class="headerlink" title="7. C#循环"></a>7. C#循环</h2><p>​    C#中的for-each循环，使用for-each循环可以迭代数组或一个集合对象。    </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">foreach(type ele in aggregate)&#123;</div><div class="line">		</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​    该循环的运行过程如下：每一次循环时，从集合中取出一个新的元素值。放到只读变量中去，如果括号中的整个表达式返回值为true，for-each块中的语句就能够执行。一旦集合中的元素都已经被访问到，整个表达式的值为false，控制流程就转入到for-each块后面的执行语句。</p>
+<h2 id="8-C-参数传递"><a href="#8-C-参数传递" class="headerlink" title="8. C#参数传递"></a>8. C#参数传递</h2><p><img src="/images/游戏开发/C-Shape/参数传递.JPG" alt="参数传递"></p>
+<ol>
+<li><p>按引用传递参数，ref</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public void swap(ref int x, ref int y)&#123;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>按输出传递参数</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">public void getValue(out int x)&#123;</div><div class="line">    </div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​    C#可空类型（Nullable），可空类型可以表示其基础值类型正常范围内的值，再加上一个 null 值。</p>
+<p>​    例如，Nullable&lt; Int32 &gt;，读作”可空的 Int32”，可以被赋值为 -2,147,483,648 到 2,147,483,647 之间的任意值，也可以被赋值为 null 值。类似的，Nullable&lt; bool &gt; 变量可以被赋值为 true 或 false 或 null。</p>
+<p>声明一个nullable类型的语法：<figure class="highlight plain"><figcaption><span>data_type> ? <variable_name> </variable_name></span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line"></div><div class="line">```c#</div><div class="line">int? num1 = null;</div><div class="line">int? num2 = 45;</div><div class="line">double? num3 = new double?();</div><div class="line">double? num4 = 3.14157;</div><div class="line">bool? boolval = new bool?(); </div><div class="line">// 显示值</div><div class="line">Console.WriteLine(&quot;显示可空类型的值： &#123;0&#125;, &#123;1&#125;, &#123;2&#125;, &#123;3&#125;&quot;, </div><div class="line">                            num1, num2, num3, num4);</div><div class="line">Console.WriteLine(&quot;一个可空的布尔值： &#123;0&#125;&quot;, boolval);</div><div class="line">Console.ReadLine();</div></pre></td></tr></table></figure></p>
+<p>​    Null合并运算符（??），Null 合并运算符用于定义可空类型和引用类型的默认值。Null 合并运算符为类型转换定义了一个预设值，以防可空类型的值为 Null。Null 合并运算符把操作数类型隐式转换为另一个可空（或不可空）的值类型的操作数的类型。</p>
+<p><strong>如果第一个操作数的值为 null，则运算符返回第二个操作数的值，否则返回第一个操作数的值。</strong></p>
+<h2 id="9-C数组"><a href="#9-C数组" class="headerlink" title="9. C数组"></a>9. C数组</h2><p>存储相同类型元素的固定大小的顺序集合。</p>
+<ol>
+<li>声明数组 <code>double[] arrayName;</code></li>
+<li>数组初始化 <code>double[] balance = new balance[10]</code></li>
+<li>数组赋值</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">double[] balance = &#123;234.2, 44.2&#125;;</div><div class="line">int[] marks = new int[5]  &#123; 99,  98, 92, 97, 95&#125;; //创建并初始化数组</div><div class="line">int[] marks = new int[]  &#123; 99,  98, 92, 97, 95&#125;; //与上一种方法等效</div><div class="line">int[] score = marks; //目标和源指向相同的内存位置</div></pre></td></tr></table></figure>
+<h4 id="二维数组"><a href="#二维数组" class="headerlink" title="二维数组"></a><strong>二维数组</strong></h4><ol>
+<li><p>二维数组声明</p>
+<p><code>string[,] names;</code> </p>
+</li>
+<li><p>二维数组初始化</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">int [,] a = new int [3,4] &#123;</div><div class="line"> &#123;0, 1, 2, 3&#125; ,   /*  初始化索引号为 0 的行 */</div><div class="line"> &#123;4, 5, 6, 7&#125; ,   /*  初始化索引号为 1 的行 */</div><div class="line"> &#123;8, 9, 10, 11&#125;   /*  初始化索引号为 2 的行 */</div><div class="line">&#125;;</div></pre></td></tr></table></figure>
+</li>
+<li><p>二维数组访问</p>
+<p><code>int val = a[2, 3];</code></p>
+</li>
+</ol>
+<h4 id="C-交错数组"><a href="#C-交错数组" class="headerlink" title="C#交错数组"></a>C#交错数组</h4><blockquote>
+<p>交错数组是数组的数组</p>
+</blockquote>
+<h4 id="C-参数数组"><a href="#C-参数数组" class="headerlink" title="C#参数数组"></a>C#参数数组</h4><blockquote>
+<p>有时，当声明一个方法时，您不能确定要传递给函数作为参数的参数数目。C# 参数数组解决了这个问题，参数数组通常用于传递未知数量的参数给函数。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div></pre></td><td class="code"><pre><div class="line">using System;</div><div class="line"></div><div class="line">namespace ArrayApplication</div><div class="line">&#123;</div><div class="line">   class ParamArray</div><div class="line">   &#123;</div><div class="line">      public int AddElements(params int[] arr)</div><div class="line">      &#123;</div><div class="line">         int sum = 0;</div><div class="line">         foreach (int i in arr)</div><div class="line">         &#123;</div><div class="line">            sum += i;</div><div class="line">         &#125;</div><div class="line">         return sum;</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">      </div><div class="line">   class TestClass</div><div class="line">   &#123;</div><div class="line">      static void Main(string[] args)</div><div class="line">      &#123;</div><div class="line">         ParamArray app = new ParamArray();</div><div class="line">         int sum = app.AddElements(512, 720, 250, 567, 889);</div><div class="line">         Console.WriteLine(&quot;总和是： &#123;0&#125;&quot;, sum);</div><div class="line">         Console.ReadKey();</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line">int[][] scores = new int[5][];</div><div class="line">for(int i = 0; i &lt; scores.Length; i++)&#123;</div><div class="line">    scores[i] = new int[4];</div><div class="line">&#125;</div><div class="line">//-----------</div><div class="line">int[][] scores = new int[2][]&#123;new int[]&#123;92, 93, 94&#125;, new int[]&#123;85, 66, 87, 88&#125;&#125;;	//其中，scores 是一个由两个整型数组组成的数组 -- scores[0] 是一个带有 3 个整数的数组，scores[1] 是一个带有 4 个整数的数组。</div></pre></td></tr></table></figure>
+<h4 id="C-Array类"><a href="#C-Array类" class="headerlink" title="C#Array类"></a>C#Array类</h4><p>​</p>
+<p>​</p>
+<h2 id="10-C结构体的特点"><a href="#10-C结构体的特点" class="headerlink" title="10. C结构体的特点"></a>10. C结构体的特点</h2><ul>
+<li>结构可带有方法、字段、索引、属性、运算符方法和事件。</li>
+<li>结构可定义构造函数，但不能定义析构函数。但是，您不能为结构定义默认的构造函数。默认的构造函数是自动定义的，且不能被改变。</li>
+<li>与类不同，结构不能继承其他的结构或类。</li>
+<li>结构不能作为其他结构或类的基础结构。</li>
+<li>结构可实现一个或多个接口。</li>
+<li>结构成员不能指定为 abstract、virtual 或 protected。</li>
+<li>当您使用 <strong>New</strong> 操作符创建一个结构对象时，会调用适当的构造函数来创建结构。与类不同，结构可以不使用 New 操作符即可被实例化。</li>
+<li>如果不使用 New 操作符，只有在所有的字段都被初始化之后，字段才被赋值，对象才被使用。</li>
+</ul>
+<p>类 vs 结构</p>
+<ul>
+<li>类是引用类型，结构是值类型。</li>
+<li>结构不支持继承。</li>
+<li>结构不能声明默认的构造函数。</li>
+</ul>
+<h2 id="11-C多重继承"><a href="#11-C多重继承" class="headerlink" title="11. C多重继承"></a>11. C多重继承</h2><p><strong>C# 不支持多重继承</strong>。但是，可以使用接口来实现多重继承。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div></pre></td><td class="code"><pre><div class="line">using System;</div><div class="line">namespace InheritanceApplication</div><div class="line">&#123;</div><div class="line">   class Shape </div><div class="line">   &#123;</div><div class="line">      public void setWidth(int w)</div><div class="line">      &#123;</div><div class="line">         width = w;</div><div class="line">      &#125;</div><div class="line">      public void setHeight(int h)</div><div class="line">      &#123;</div><div class="line">         height = h;</div><div class="line">      &#125;</div><div class="line">      protected int width;</div><div class="line">      protected int height;</div><div class="line">   &#125;</div><div class="line"></div><div class="line">   // 基类 PaintCost</div><div class="line">   public interface PaintCost </div><div class="line">   &#123;</div><div class="line">      int getCost(int area);</div><div class="line"></div><div class="line">   &#125;</div><div class="line">   // 派生类</div><div class="line">   class Rectangle : Shape, PaintCost</div><div class="line">   &#123;</div><div class="line">      public int getArea()</div><div class="line">      &#123;</div><div class="line">         return (width * height);</div><div class="line">      &#125;</div><div class="line">      public int getCost(int area)</div><div class="line">      &#123;</div><div class="line">         return area * 70;</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">   class RectangleTester</div><div class="line">   &#123;</div><div class="line">      static void Main(string[] args)</div><div class="line">      &#123;</div><div class="line">         Rectangle Rect = new Rectangle();</div><div class="line">         int area;</div><div class="line">         Rect.setWidth(5);</div><div class="line">         Rect.setHeight(7);</div><div class="line">         area = Rect.getArea();</div><div class="line">         // 打印对象的面积</div><div class="line">         Console.WriteLine(&quot;总面积： &#123;0&#125;&quot;,  Rect.getArea());</div><div class="line">         Console.WriteLine(&quot;油漆总成本： $&#123;0&#125;&quot; , Rect.getCost(area));</div><div class="line">         Console.ReadKey();</div><div class="line">      &#125;</div><div class="line">   &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+</ol>
+<h2 id="12-C-多态性"><a href="#12-C-多态性" class="headerlink" title="12. C#多态性"></a>12. C#多态性</h2><p>​    <strong>多态性</strong>意味着有多重形式。在面向对象编程范式中，多态性往往表现为”一个接口，多个功能”。</p>
+<p>​    多态性可以是静态的或动态的。在<strong>静态多态性</strong>（函数重载、运算符重载）中，函数的响应是在编译时发生的。在<strong>动态多态性</strong>（抽象类、虚方法）中，函数的响应是在运行时发生的。</p>
+<h2 id="13-C-运算符重载"><a href="#13-C-运算符重载" class="headerlink" title="13. C#运算符重载"></a>13. C#运算符重载</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">public static Box operator+ (Box b, Box c) //必须为static，public</div><div class="line">&#123;</div><div class="line">   Box box = new Box();</div><div class="line">   box.length = b.length + c.length;</div><div class="line">   box.breadth = b.breadth + c.breadth;</div><div class="line">   box.height = b.height + c.height;</div><div class="line">   return box;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h2 id="14-C-的virtual和abstract"><a href="#14-C-的virtual和abstract" class="headerlink" title="14. C#的virtual和abstract"></a>14. C#的virtual和abstract</h2><p>​    virtual和abstract都是用来修饰父类的，通过覆盖父类的定义，让子类重新定义。</p>
+<ol>
+<li>virtual修饰的方法必须有实现（哪怕是仅仅添加一对大括号),而abstract修饰的方法一定不能实现。</li>
+<li>virtual可以被子类重写，而abstract必须被子类重写。</li>
+<li>如果类成员被abstract修饰，则该类前必须添加abstract，因为只有抽象类才可以有抽象方法。</li>
+<li>无法创建abstract类的实例，只能被继承无法实例化。</li>
+</ol>
+<h2 id="15-C-命名空间"><a href="#15-C-命名空间" class="headerlink" title="15. C#命名空间"></a>15. C#命名空间</h2><blockquote>
+<p>命名空间的设计目的是提供一种让一组名称与其他名称分隔开的方式。在一个命名空间中声明的类的名称与另一个命名空间中声明的相同的类的名称不冲突。</p>
+</blockquote>
+<h2 id="16-C-特性"><a href="#16-C-特性" class="headerlink" title="16. C#特性"></a>16. C#特性</h2><blockquote>
+<p><strong>特性（Attribute）</strong>是用于在运行时传递程序中各种元素（比如类、方法、结构、枚举、组件等）的行为信息的声明性标签。</p>
+<p>特性用于添加元数据，如编译器指令和注释、描述、方法、类等其他信息。.Net 框架提供了两种类型的特性：<em>预定义</em>特性和<em>自定义</em>特性。.Net 框架提供了两种类型的特性：<em>预定义</em>特性和<em>自定义</em>特性。</p>
+</blockquote>
+<h3 id="1-规定特性"><a href="#1-规定特性" class="headerlink" title="1.规定特性"></a>1.规定特性</h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">[attribute(positional_parameters, name_parameter = value, ...)]</div><div class="line">element</div></pre></td></tr></table></figure>
+<p>​    <strong>特性（Attribute）的名称和值是在方括号内规定的，放置在它所应用的元素之前。positional_parameters 规定必需的信息，name_parameter 规定可选的信息。</strong></p>
+<h3 id="2-预定义特性"><a href="#2-预定义特性" class="headerlink" title="2.预定义特性"></a>2.预定义特性</h3><ul>
+<li><p>AttributeUsage</p>
+<p>预定义特性 <strong>AttributeUsage</strong> 描述了如何使用一个自定义特性类。它规定了特性可应用到的项目的类型。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">[AttributeUsage(</div><div class="line">   validon,</div><div class="line">   AllowMultiple=allowmultiple,</div><div class="line">   Inherited=inherited</div><div class="line">)]</div></pre></td></tr></table></figure>
+<p>其中：</p>
+<ul>
+<li>参数 validon 规定特性可被放置的语言元素。它是枚举器 <em>AttributeTargets</em> 的值的组合。默认值是 <em>AttributeTargets.All</em>。</li>
+<li>参数 <em>allowmultiple</em>（可选的）为该特性的 <em>AllowMultiple</em> 属性（property）提供一个布尔值。如果为 true，则该特性是多用的。默认值是 false（单用的）。</li>
+<li>参数 <em>inherited</em>（可选的）为该特性的 <em>Inherited</em> 属性（property）提供一个布尔值。如果为 true，则该特性可被派生类继承。默认值是 false（不被继承）。</li>
+</ul>
+</li>
+<li><p>Conditional（条件）</p>
+<p>这个预定义特性标记了一个条件方法，其执行依赖于指定的预处理标识符。</p>
+<p><strong>它会引起方法调用的条件编译</strong>，取决于指定的值，比如 <strong>Debug</strong> 或 <strong>Trace</strong>。例如，当调试代码时显示变量的值。规定该特性的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">[Conditional(</div><div class="line">   conditionalSymbol</div><div class="line">)]</div><div class="line">[Conditional(&quot;DEBUG&quot;)]</div></pre></td></tr></table></figure>
+<p>​</p>
+</li>
+<li><p>Obsolete（过时的）</p>
+<p>这个预定义特性标记了不应被使用的程序实体。它可以让您通知编译器丢弃某个特定的目标元素。例如，当一个新方法被用在一个类中，但是您仍然想要保持类中的旧方法，您可以通过显示一个应该使用新方法，而不是旧方法的消息，来把它标记为 obsolete（过时的）。规定该特性的语法如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div></pre></td><td class="code"><pre><div class="line">[Obsolete(</div><div class="line">   message</div><div class="line">)]</div><div class="line">[Obsolete(</div><div class="line">   message,</div><div class="line">   iserror</div><div class="line">)]</div></pre></td></tr></table></figure>
+<p>其中：</p>
+<ul>
+<li>参数 <em>message</em>，是一个字符串，描述项目为什么过时的原因以及该替代使用什么。</li>
+<li>参数 <em>iserror</em>，是一个布尔值。如果该值为 true，编译器应把该项目的使用当作一个错误。默认值是 false（编译器生成一个警告）。</li>
+</ul>
+<h3 id="3-创建自定义特性"><a href="#3-创建自定义特性" class="headerlink" title="3.创建自定义特性"></a>3.创建自定义特性</h3><p>创建并使用自定义特性包含四个步骤：</p>
+<ul>
+<li><p>声明自定义特性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line">// 一个自定义特性 BugFix 被赋给类及其成员</div><div class="line">[AttributeUsage(AttributeTargets.Class |</div><div class="line">AttributeTargets.Constructor |</div><div class="line">AttributeTargets.Field |</div><div class="line">AttributeTargets.Method |</div><div class="line">AttributeTargets.Property,</div><div class="line">AllowMultiple = true)]</div><div class="line"></div><div class="line">public class DeBugInfo : System.Attribute</div></pre></td></tr></table></figure>
+</li>
+<li><p>构建自定义特性</p>
+<p>每个特性必须至少有一个构造函数。必需的定位（ positional）参数应通过构造函数传递。下面的代码演示了 <em>DeBugInfo</em> 类：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div><div class="line">34</div><div class="line">35</div><div class="line">36</div><div class="line">37</div><div class="line">38</div><div class="line">39</div><div class="line">40</div><div class="line">41</div><div class="line">42</div><div class="line">43</div><div class="line">44</div><div class="line">45</div><div class="line">46</div><div class="line">47</div><div class="line">48</div><div class="line">49</div><div class="line">50</div><div class="line">51</div><div class="line">52</div><div class="line">53</div><div class="line">54</div><div class="line">55</div></pre></td><td class="code"><pre><div class="line">// 一个自定义特性 BugFix 被赋给类及其成员</div><div class="line">[AttributeUsage(AttributeTargets.Class |</div><div class="line">AttributeTargets.Constructor |</div><div class="line">AttributeTargets.Field |</div><div class="line">AttributeTargets.Method |</div><div class="line">AttributeTargets.Property,</div><div class="line">AllowMultiple = true)]</div><div class="line"></div><div class="line">public class DeBugInfo : System.Attribute</div><div class="line">&#123;</div><div class="line">  private int bugNo;</div><div class="line">  private string developer;</div><div class="line">  private string lastReview;</div><div class="line">  public string message;</div><div class="line"></div><div class="line">  public DeBugInfo(int bg, string dev, string d)</div><div class="line">  &#123;</div><div class="line">      this.bugNo = bg;</div><div class="line">      this.developer = dev;</div><div class="line">      this.lastReview = d;</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  public int BugNo</div><div class="line">  &#123;</div><div class="line">      get</div><div class="line">      &#123;</div><div class="line">          return bugNo;</div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line">  public string Developer</div><div class="line">  &#123;</div><div class="line">      get</div><div class="line">      &#123;</div><div class="line">          return developer;</div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line">  public string LastReview</div><div class="line">  &#123;</div><div class="line">      get</div><div class="line">      &#123;</div><div class="line">          return lastReview;</div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line">  public string Message</div><div class="line">  &#123;</div><div class="line">      get</div><div class="line">      &#123;</div><div class="line">          return message;</div><div class="line">      &#125;</div><div class="line">      set</div><div class="line">      &#123;</div><div class="line">          message = value;</div><div class="line">      &#125;</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>应用自定义特性</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div></pre></td><td class="code"><pre><div class="line">[DeBugInfo(45, &quot;Zara Ali&quot;, &quot;12/8/2012&quot;, Message = &quot;Return type mismatch&quot;)]</div><div class="line">[DeBugInfo(49, &quot;Nuha Ali&quot;, &quot;10/10/2012&quot;, Message = &quot;Unused variable&quot;)]</div><div class="line">class Rectangle</div><div class="line">&#123;</div><div class="line">  // 成员变量</div><div class="line">  protected double length;</div><div class="line">  protected double width;</div><div class="line">  public Rectangle(double l, double w)</div><div class="line">  &#123;</div><div class="line">      length = l;</div><div class="line">      width = w;</div><div class="line">  &#125;</div><div class="line">  [DeBugInfo(55, &quot;Zara Ali&quot;, &quot;19/10/2012&quot;,</div><div class="line">  Message = &quot;Return type mismatch&quot;)]</div><div class="line">  public double GetArea()</div><div class="line">  &#123;</div><div class="line">      return length * width;</div><div class="line">  &#125;</div><div class="line">  [DeBugInfo(56, &quot;Zara Ali&quot;, &quot;19/10/2012&quot;)]</div><div class="line">  public void Display()</div><div class="line">  &#123;</div><div class="line">      Console.WriteLine(&quot;Length: &#123;0&#125;&quot;, length);</div><div class="line">      Console.WriteLine(&quot;Width: &#123;0&#125;&quot;, width);</div><div class="line">      Console.WriteLine(&quot;Area: &#123;0&#125;&quot;, GetArea());</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+</li>
+<li><p>通过<strong>反射</strong>访问特性</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="17-C-反射"><a href="#17-C-反射" class="headerlink" title="17.C#反射"></a>17.C#反射</h2><blockquote>
+<p>反射指程序可以访问、检测和修改它本身状态或行为的一种能力。</p>
+<p>程序集包含模块，而模块包含类型，类型又包含成员。反射则提供了封装程序集、模块和类型的对象。</p>
+<p>您可以使用反射动态地创建类型的实例，将类型绑定到现有对象，或从现有对象中获取类型。然后，可以调用类型的方法或访问其字段和属性。</p>
+</blockquote>
+<h3 id="优缺点"><a href="#优缺点" class="headerlink" title="优缺点"></a>优缺点</h3><p>优点：</p>
+<ul>
+<li>1、反射提高了程序的灵活性和扩展性。</li>
+<li>2、降低耦合性，提高自适应能力。</li>
+<li>3、它允许程序创建和控制任何类的对象，无需提前硬编码目标类。</li>
+</ul>
+<p>缺点：</p>
+<ul>
+<li>1、性能问题：使用反射基本上是一种解释操作，用于字段和方法接入时要远慢于直接代码。因此反射机制主要应用在对灵活性和拓展性要求很高的系统框架上，普通程序不建议使用。</li>
+<li>2、使用反射会模糊程序内部逻辑；程序员希望在源代码中看到程序的逻辑，反射却绕过了源代码的技术，因而会带来维护的问题，反射代码比相应的直接代码更复杂。</li>
+</ul>
+<h2 id="反射（Reflection）的用途"><a href="#反射（Reflection）的用途" class="headerlink" title="反射（Reflection）的用途"></a>反射（Reflection）的用途</h2><p>反射（Reflection）有下列用途：</p>
+<ul>
+<li>它允许在运行时查看特性（attribute）信息。</li>
+<li>它允许审查集合中的各种类型，以及实例化这些类型。</li>
+<li>它允许延迟绑定的方法和属性（property）。</li>
+<li>它允许在运行时创建新类型，然后使用这些类型执行一些任务。</li>
+</ul>
+<h2 id="C-索引器"><a href="#C-索引器" class="headerlink" title="C#索引器"></a>C#索引器</h2><blockquote>
+<p><strong>索引器（Indexer）</strong> 允许一个对象可以像数组一样被索引。当您为类定义一个索引器时，该类的行为就会像一个 <strong>虚拟数组（virtual array）</strong> 一样。您可以使用数组访问运算符（[ ]）来访问该类的实例。</p>
+</blockquote>
+<h2 id="C-委托"><a href="#C-委托" class="headerlink" title="C#委托"></a>C#委托</h2><blockquote>
+<p>C# 中的委托（Delegate）类似于 C 或 C++ 中函数的指针。<strong>委托（Delegate）</strong> 是存有对某个方法的引用的一种引用类型变量。引用可在运行时被改变。</p>
+<p><strong>委托（Delegate）特别用于实现事件和回调方法</strong>。所有的委托（Delegate）都派生自 <strong>System.Delegate</strong> 类。</p>
+</blockquote>
+<ol>
+<li><p>申明委托</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">public delegate int MyDelegate(string s); //可用于引用任何一个带有一个单一的string参数的方法，并返回一个int类型变量。</div></pre></td></tr></table></figure>
+</li>
+<li><p>实例化委托</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">public delegate void printString(string s);</div><div class="line">...</div><div class="line">printString ps1 = new printString(WriteToScreen);</div><div class="line">printString ps2 = new printString(WriteToFile);</div></pre></td></tr></table></figure>
+</li>
+<li><p>委托的多播</p>
+<blockquote>
+<p>委托对象可使用 <strong>“+”</strong> 运算符进行合并。一个合并委托调用它所合并的两个委托。只有相同类型的委托可被合并。<strong>“-“</strong> 运算符可用于从合并的委托中移除组件委托。</p>
+<p>使用委托的这个有用的特点，您可以创建一个委托被调用时要调用的方法的调用列表。这被称为委托的 <strong>多播（multicasting）</strong>，也叫组播。</p>
+</blockquote>
+</li>
+</ol>
+<h2 id="18-C-事件"><a href="#18-C-事件" class="headerlink" title="18.C#事件"></a>18.C#事件</h2><ol>
+<li><p>通过事件使用委托</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line"> 事件在类中声明且生成，且通过使用同一个类或其他类中的委托与事件处理程序关联。包含事件的类用于发布事件。这被称为 发布器（publisher） 类。其他接受该事件的类被称为 订阅器（subscriber） 类。事件使用 发布-订阅（publisher-subscriber） 模型。</div><div class="line"></div><div class="line">发布器（publisher） 是一个包含事件和委托定义的对象。事件和委托之间的联系也定义在这个对象中。发布器（publisher）类的对象调用这个事件，并通知其他的对象。</div><div class="line"></div><div class="line">订阅器（subscriber） 是一个接受事件并提供事件处理程序的对象。在发布器（publisher）类中的委托调用订阅器（subscriber）类中的方法（事件处理程序）。</div></pre></td></tr></table></figure>
+<ol>
+<li><p>声明事件（Event）</p>
+<p>在类的内部声明事件，首先必须声明该事件的委托类型。例如：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">public delegate void BoilerLogHandler(string status);</div></pre></td></tr></table></figure>
+<p>然后，声明事件本身，使用 <strong>event</strong> 关键字：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">// 基于上面的委托定义事件</div><div class="line">public event BoilerLogHandler BoilerEventLog;</div></pre></td></tr></table></figure></li>
+</ol>
+</li>
+</ol>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
       
       
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2017" class="archive-year">2017</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/17/游戏开发/C#/" class="archive-article-date">
-  	<time datetime="2017-10-17T14:36:11.770Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-17</time>
-</a>
-        </div>
-    	 
-        <div class="article-info info-on-right">
-          
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/10/17/游戏开发/C#/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/16/系统分析与设计/系统分析与设计7/" class="archive-article-date">
-  	<time datetime="2017-10-15T16:58:32.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-16</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2017/10/16/系统分析与设计/系统分析与设计7/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">系统分析与设计7</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/16/系统分析与设计/系统分析与设计7/">系统分析与设计7</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/12/软件测试与技术保证3/" class="archive-article-date">
-  	<time datetime="2017-10-12T00:44:53.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-12</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/12/软件测试与技术保证3/">软件测试与技术保证3</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/10/系统分析与设计/系统分析与设计6/" class="archive-article-date">
-  	<time datetime="2017-10-10T03:16:13.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/10/系统分析与设计/系统分析与设计6/">系统分析与设计6</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/10/09/系统分析与设计/系统分析与设计4/" class="archive-article-date">
-  	<time datetime="2017-10-09T00:49:23.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-10-09</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/10/09/系统分析与设计/系统分析与设计4/">系统分析与设计4</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/29/系统分析与设计/系统分析与设计3/" class="archive-article-date">
-  	<time datetime="2017-09-29T02:56:39.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-29</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/29/系统分析与设计/系统分析与设计3/">系统分析与设计3</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/26/技术前沿2/" class="archive-article-date">
-  	<time datetime="2017-09-26T05:33:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-26</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/26/技术前沿2/">技术前沿2</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/25/系统分析与设计/系统分析与设计1/" class="archive-article-date">
-  	<time datetime="2017-09-25T02:47:55.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/25/系统分析与设计/系统分析与设计1/">系统分析与设计1</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2017/09/25/系统分析与设计/系统分析与设计2/" class="archive-article-date">
-  	<time datetime="2017-09-25T02:47:44.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-09-25</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2017/09/25/系统分析与设计/系统分析与设计2/">系统分析与设计2</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
-  
-
-    
 
 
           </div>
@@ -424,8 +582,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
