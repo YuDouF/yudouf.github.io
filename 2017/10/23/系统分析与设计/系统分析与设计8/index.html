@@ -8,13 +8,24 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>系统分析与设计8 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="article">
+  <meta name="description" content="状态机 虚构状态——状态机的开始状态，用黑点表示 原始状态——对象变化前的状态 目标状态——对象经过一系列转化后的最终状态 消息事件——触发对象状态转变的操作 动作描述——转变操作的描述    类图构建过程 用例图绘制（系统能提供参与者的功能，分析描述中的所有动词解析）  对每个用例分析绘制其顺序图（参与者与系统之间的交互用边界类实现）  将顺序图中的所有使用的方法添加到类图中，形成类图的操作。">
+<meta property="og:type" content="article">
 <meta property="og:title" content="系统分析与设计8">
 <meta property="og:url" content="http://yoursite.com/2017/10/23/系统分析与设计/系统分析与设计8/index.html">
 <meta property="og:site_name" content="Hexo">
-<meta property="og:updated_time" content="2017-10-23T06:55:09.111Z">
+<meta property="og:description" content="状态机 虚构状态——状态机的开始状态，用黑点表示 原始状态——对象变化前的状态 目标状态——对象经过一系列转化后的最终状态 消息事件——触发对象状态转变的操作 动作描述——转变操作的描述    类图构建过程 用例图绘制（系统能提供参与者的功能，分析描述中的所有动词解析）  对每个用例分析绘制其顺序图（参与者与系统之间的交互用边界类实现）  将顺序图中的所有使用的方法添加到类图中，形成类图的操作。">
+<meta property="og:image" content="http://yoursite.com/images/系统分析与设计/8/状态机.png">
+<meta property="og:image" content="http://yoursite.com/images/系统分析与设计/8/并行状态机.png">
+<meta property="og:image" content="http://yoursite.com/images/系统分析与设计/8/顺序图1.png">
+<meta property="og:image" content="http://yoursite.com/images/系统分析与设计/8/顺序图2.png">
+<meta property="og:image" content="http://yoursite.com/images/系统分析与设计/8/顺序图3.png">
+<meta property="og:image" content="http://yoursite.com/images/系统分析与设计/8/顺序图4.png">
+<meta property="og:image" content="http://yoursite.com/images/系统分析与设计/8/三层设计.png">
+<meta property="og:updated_time" content="2017-10-23T07:19:23.313Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="系统分析与设计8">
+<meta name="twitter:description" content="状态机 虚构状态——状态机的开始状态，用黑点表示 原始状态——对象变化前的状态 目标状态——对象经过一系列转化后的最终状态 消息事件——触发对象状态转变的操作 动作描述——转变操作的描述    类图构建过程 用例图绘制（系统能提供参与者的功能，分析描述中的所有动词解析）  对每个用例分析绘制其顺序图（参与者与系统之间的交互用边界类实现）  将顺序图中的所有使用的方法添加到类图中，形成类图的操作。">
+<meta name="twitter:image" content="http://yoursite.com/images/系统分析与设计/8/状态机.png">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -170,7 +181,31 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        
+        <h2 id="状态机"><a href="#状态机" class="headerlink" title="状态机"></a>状态机</h2><ul>
+<li>虚构状态——状态机的开始状态，用黑点表示</li>
+<li>原始状态——对象变化前的状态</li>
+<li>目标状态——对象经过一系列转化后的最终状态</li>
+<li>消息事件——触发对象状态转变的操作</li>
+<li>动作描述——转变操作的描述</li>
+</ul>
+<p><img src="/images/系统分析与设计/8/状态机.png" alt="状态机"></p>
+<p><img src="/images/系统分析与设计/8/并行状态机.png" alt="并行状态机"></p>
+<h2 id="类图构建过程"><a href="#类图构建过程" class="headerlink" title="类图构建过程"></a>类图构建过程</h2><ol>
+<li><p>用例图绘制（系统能提供参与者的功能，分析描述中的所有动词解析）</p>
+</li>
+<li><p>对每个用例分析绘制其顺序图（参与者与系统之间的交互用边界类实现）</p>
+</li>
+<li><p>将顺序图中的所有使用的方法添加到类图中，形成类图的操作。</p>
+<p><img src="/images/系统分析与设计/8/顺序图1.png" alt="顺序图1"></p>
+<p><img src="/images/系统分析与设计/8/顺序图2.png" alt="顺序图2"></p>
+</li>
+<li><p>扩展顺序图，添加视图类和数据存取类</p>
+</li>
+</ol>
+<p><img src="/images/系统分析与设计/8/顺序图3.png" alt="顺序图3"></p>
+<p><img src="/images/系统分析与设计/8/顺序图4.png" alt="顺序图4"></p>
+<h2 id="三层包设计"><a href="#三层包设计" class="headerlink" title="三层包设计"></a>三层包设计</h2><p><img src="/images/系统分析与设计/8/三层设计.png" alt="三层设计"></p>
+
       
 
       
